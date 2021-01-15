@@ -1,0 +1,47 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.1, pytest-6.2.1, py-1.10.0, pluggy-0.13.1 -- /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/jreagen/PycharmProjects/CardGame
+plugins: cov-2.10.1
+collecting ... collected 29 items
+
+test_card_game.py::test_card_value[2-Clubs-8] PASSED                     [  3%]
+test_card_game.py::test_card_value[2-Hearts-6] PASSED                    [  6%]
+test_card_game.py::test_card_value[2-Diamonds-4] PASSED                  [ 10%]
+test_card_game.py::test_card_value[2-Spades-2] PASSED                    [ 13%]
+test_card_game.py::test_card__str__[2-Clubs-2 of Clubs] PASSED           [ 17%]
+test_card_game.py::test_card__str__[2-Hearts-2 of Hearts] PASSED         [ 20%]
+test_card_game.py::test_card__str__[2-Diamonds-2 of Diamonds] PASSED     [ 24%]
+test_card_game.py::test_card__str__[2-Spades-2 of Spades] PASSED         [ 27%]
+test_card_game.py::test_card__str__[13-Spades-King of Spades] PASSED     [ 31%]
+test_card_game.py::test_card__gt__[first_card0-second_card0-True] PASSED [ 34%]
+test_card_game.py::test_card__gt__[first_card1-second_card1-True] PASSED [ 37%]
+test_card_game.py::test_card__gt__[first_card2-second_card2-True] PASSED [ 41%]
+test_card_game.py::test_card__gt__[first_card3-second_card3-False] PASSED [ 44%]
+test_card_game.py::test_deck PASSED                                      [ 48%]
+test_card_game.py::test_deal PASSED                                      [ 51%]
+test_card_game.py::test_shuffle PASSED                                   [ 55%]
+test_card_game.py::test_sort PASSED                                      [ 58%]
+test_card_game.py::test_player_name PASSED                               [ 62%]
+test_card_game.py::test_player_add_card PASSED                           [ 65%]
+test_card_game.py::test_card_game_player_failure[0] PASSED               [ 68%]
+test_card_game.py::test_card_game_player_failure[1] PASSED               [ 72%]
+test_card_game.py::test_card_game_player_failure[3] PASSED               [ 75%]
+test_card_game.py::test_card_game_player_failure[100] PASSED             [ 79%]
+test_card_game.py::test_card_game_player_success[2] PASSED               [ 82%]
+test_card_game.py::test_play_card_game PASSED                            [ 86%]
+test_card_game.py::test_show_winner PASSED                               [ 89%]
+test_card_game.py::test_main_success PASSED                              [ 93%]
+test_card_game.py::test_main_sort_option PASSED                          [ 96%]
+test_card_game.py::test_main_failure PASSED                              [100%]
+
+---------- coverage: platform darwin, python 3.9.1-final-0 -----------
+Name                Stmts   Miss  Cover
+---------------------------------------
+card_game.py          103      5    95%
+test_card_game.py      81      2    98%
+---------------------------------------
+TOTAL                 184      7    96%
+
+
+============================== 29 passed in 0.16s ==============================
