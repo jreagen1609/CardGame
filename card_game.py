@@ -2,7 +2,7 @@
 """This module supports a two player card game.
 
 Two players are dealt three cards alternating back and forth.
-The player with the higher score wns the game.
+The player with the higher score wins the game.
 By default, the game builds a deck and then shuffles
 the deck. The deck is not sorted.
 
@@ -133,13 +133,14 @@ class Deck:
     The Deck class contains various methods to shuffle and sort the deck.
     A deal method returns the top card on the deck.
     """
-
+    LOW_CARD = 2
+    HIGH_CARD = 14
     suits = ["Spades", "Diamonds", "Hearts", "Clubs"]
 
     def __init__(self):
         self.the_deck = list()
         for suit in Deck.suits:
-            for rank in range(2, 15):
+            for rank in range(Deck.LOW_CARD, Deck.HIGH_CARD + 1):
                 new_card = Card(rank, suit)
                 self.the_deck.append(new_card)
 
@@ -345,7 +346,7 @@ class CardGame:
         cards_to_deal = self.num_players * self.cards_per_player
         while cards_to_deal > 0:
             next_card = deck.deal()
-            if next_card is None:   # no mre cards left in deck
+            if next_card is None:   # no more cards left in deck
                 break
             self.players[current_player].add_card(next_card)
             current_player = (current_player + 1) % self.num_players
